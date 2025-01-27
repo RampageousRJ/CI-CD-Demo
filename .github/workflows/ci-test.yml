@@ -21,8 +21,7 @@ jobs:
 
     - name: Install Dependancies
       run: 
-        sudo apt-get update
-        sudo apt-get install -y make git python3-venv
+        sudo apt-get update && sudo apt-get install -y make git python3-venv
 
     - name: Run tests
       run: make test
